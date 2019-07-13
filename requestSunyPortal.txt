@@ -1,0 +1,29 @@
+
+
+Request CO2
+curl "https://uiapi.sunnyportal.com/api/v1/widgets/co2?componentId=347998^&todayDate=2018-10-29"
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1bmlxdWVfbmFtZSI6ImEuYmFpdGFzc292QG1lay5reiIsImlhdCI6IjE1NDA4MDk4MTAiLCJzdWIiOiJhLmJhaXRhc3NvdkBtZWsua3oiLCJ1aWQiOiI2NjYyOSIsImlzcyI6Imh0dHBzOi8vZW5uZXguc3VubnktcG9ydGFsLmNvbSIsImF1ZCI6IjQzNzg5YWYzODk3OWVhYTgwNzg5NzM5MGJjOTM3MWQyIiwiZXhwIjoxNTQwODA5OTMwLCJuYmYiOjE1NDA4MDk4MTB9.6jkr3sf-uySPciOYrgmPdImIjd6931Oi3tKhBldsZsc"
+-H "Origin: https://ennexos.sunnyportal.com"
+-H "Accept-Encoding: gzip, deflate, br"
+-H "Accept-Language: ru,en;q=0.9"
+-H "User-Agent: 1080p"
+-H "Accept: application/json, text/plain, */*"
+-H "Referer: https://ennexos.sunnyportal.com/347998/dashboard"
+-H "Connection: keep-alive" --compressed
+
+Respons
+{
+  "today": 21,
+  "total": 642
+}
+
+Request power
+curl "https://uiapi.sunnyportal.com/api/v1/widgets/gauge/power?componentId=347998"
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1bmlxdWVfbmFtZSI6ImEuYmFpdGFzc292QG1lay5reiIsImlhdCI6IjE1NDA4MDk4MTAiLCJzdWIiOiJhLmJhaXRhc3NvdkBtZWsua3oiLCJ1aWQiOiI2NjYyOSIsImlzcyI6Imh0dHBzOi8vZW5uZXguc3VubnktcG9ydGFsLmNvbSIsImF1ZCI6IjQzNzg5YWYzODk3OWVhYTgwNzg5NzM5MGJjOTM3MWQyIiwiZXhwIjoxNTQwODA5OTMwLCJuYmYiOjE1NDA4MDk4MTB9.6jkr3sf-uySPciOYrgmPdImIjd6931Oi3tKhBldsZsc"
+-H "Origin: https://ennexos.sunnyportal.com"
+-H "Accept-Encoding: gzip, deflate, br"
+-H "Accept-Language: ru,en;q=0.9"
+-H "User-Agent: 1080p"
+-H "Accept: application/json, text/plain, */*"
+-H "Referer: https://ennexos.sunnyportal.com/347998/dashboard"
+-H "Connection: keep-alive" --compressed

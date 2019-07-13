@@ -1,0 +1,137 @@
+@CHARSET "UTF-8";
+
+body {
+    width: 1920px;
+    height: 1080px;
+    margin: 0;
+    padding: 0;
+    background: url(/../images/bg-1-1920x1080.png);
+    /*background: #e0e0e0 url(images/bg-1-1920x1080.png);*/
+    background-size: 1920px 1080px;
+
+}
+
+div {
+    position: absolute;
+}
+
+.out {
+    left: 138px;
+    width: 640px;
+    height: 172px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: inset rgba(255, 255, 255, 0.7) 2px 2px 2px, inset rgba(0, 0, 0, 0.3) -2px -2px 2px,
+    4px 4px 6px 2px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: inset rgba(255, 255, 255, 0.7) 2px 2px 2px, inset rgba(0, 0, 0, 0.3) -2px -2px 2px,
+    4px 4px 6px 2px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: inset rgba(255, 255, 255, 0.7) 2px 2px 2px, inset rgba(0, 0, 0, 0.3) -2px -2px 2px,
+    4px 4px 6px 2px rgba(0, 0, 0, 0.7);
+    background: silver;
+}
+
+#clock1 {
+    top: 255px;
+}
+
+#clock2 {
+    top: 500px;
+}
+
+#clock3 {
+    top: 750px;
+}
+
+.in {
+    left: 13px;
+    top: 8px;
+    width: 607px;
+    height: 150px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: inset rgba(0, 0, 0, 0.3) 2px 2px 2px, 2px 2px 2px rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: inset rgba(0, 0, 0, 0.3) 2px 2px 2px, 2px 2px 2px rgba(255, 255, 255, 0.7);
+    -webkit-box-shadow: inset rgba(0, 0, 0, 0.3) 2px 2px 2px, 2px 2px 2px rgba(255, 255, 255, 0.7);
+}
+
+#clock1 .in {
+    background: black;
+}
+
+#clock2 .in {
+    background: black;
+}
+
+#clock3 .in {
+    background: black;
+}
+
+.clock {
+    left: 160px;
+    top: 20px;
+    width: 400px;
+    height: 100px;
+}
+
+.hour, .min {
+    top: 0px;
+    width: 540px;
+    height: 100px;
+}
+
+.hour {
+    left: -100px
+}
+
+
+.min {
+    left: 180px
+}
+
+.sec {
+    left: 320px;
+    bottom: 2px;
+    width: 100px;
+    height: 70px;
+}
+
+.sep, .seps {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+}
+
+.sep {
+    margin: -6px;
+}
+
+.seps {
+    margin: -3px;
+}
+
+.sep1 {
+    left: 174px;
+    top: 20%;
+}
+
+.sep2 {
+    left: 166px;
+    top: 80%;
+}
+
+#clock1 .sep.show {
+    background: lime;
+}
+
+#clock2 .sep.show {
+    background: lime;
+}
+
+#clock3 .sep.show {
+    background: lime;
+}
+
