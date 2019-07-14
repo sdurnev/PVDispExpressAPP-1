@@ -16,6 +16,7 @@
     "morgan": "~1.9.0",
     "node-int64": "^0.4.0",
     "node-modbus": "^4.3.1",
-    "random-int": "^1.0.0"
+    "random-int": "^1.0.0",
+    "yarn": "^1.17.3"
   }
 }

@@ -19,7 +19,7 @@ function modbusReadAll(callback) {
     };
     modbusTotalEnergy(function (totalEnergy) {
         modbusCurrPower(function (currPower) {
-            //console.log(currPower);
+            console.log(currPower);
             a.currPower = currPower;
         });
         a.totalEnergy = totalEnergy;
