@@ -14,7 +14,7 @@ function modbusReadAll(callback) {
         });
         a.totalEnergy = totalEnergy;
         a.coSawing = totalEnergy * 0.5;
-        console.log(a);
+        console.log();
     })
 
 }
@@ -37,7 +37,7 @@ function modbusTotalEnergy(callback) {
                 var temp1 = Uint8Array.from(buf);
                 var temp2 = [];
                 for (i=0; i<temp1.length; i++){
-                    if((i%2)==0){
+                    if((i%2)===0){
                         temp2.push(temp1[i+1],temp1[i]);
                     }
                 }
@@ -72,7 +72,7 @@ function modbusCurrPower(callback) {
                 var temp1 = Uint8Array.from(buf);
                 var temp2 = [];
                 for (i=0; i<temp1.length; i++){
-                    if((i%2)==0){
+                    if((i%2)===0){
                         temp2.push(temp1[i+1],temp1[i]);
                     }
                 }
