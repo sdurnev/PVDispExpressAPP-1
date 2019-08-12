@@ -20,11 +20,11 @@ function modbusReadAll(callback) {
     modbusTotalEnergy(function (totalEnergy) {
         modbusCurrPower(function (currPower) {
             a.currPower = currPower;
+            a.totalEnergy = totalEnergy;
+            a.coSawing = totalEnergy * 0.5;
+            console.log(a);
+            callback(a);
         });
-        a.totalEnergy = totalEnergy;
-        a.coSawing = totalEnergy * 0.5;
-        console.log(a);
-        callback(a);
     })
 
 }

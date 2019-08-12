@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-var modbusHost = '82.200.166.231';
-var modbusPort = '55999';
+var modbusHost = '192.168.10.6';
+var modbusPort = '502';
 
 router.get('/', function(req, res, next) {
     modbusReadAll(function (data) {
@@ -19,12 +19,13 @@ function modbusReadAll(callback) {
     };
     modbusTotalEnergy(function (totalEnergy) {
         modbusCurrPower(function (currPower) {
+            //console.log(currPower);
             a.currPower = currPower;
+            a.totalEnergy = totalEnergy;
+            a.coSawing = totalEnergy * 0.5;
+            console.log(a);
+            callback(a);
         });
-        a.totalEnergy = totalEnergy;
-        a.coSawing = totalEnergy * 0.5;
-        console.log(a);
-        callback(a);
     })
 
 }
