@@ -1,8 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-var modbusHost = '82.200.166.231';
-var modbusPort = '55999';
+//var modbusHost = '82.200.166.231';
+var modbusHost = '92.46.118.244';
+var modbusPort = '502';
 
 router.get('/', function(req, res, next) {
     modbusReadAll(function (data) {

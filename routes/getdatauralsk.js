@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-var modbusHost = '192.168.10.6';
+//var modbusHost = '192.168.10.6';
+var modbusHost = '92.46.118.244';
 var modbusPort = '502';
 
 router.get('/', function(req, res, next) {
